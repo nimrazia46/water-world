@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANJALIKA WATER PARK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Outfit:wght@900&display=swap"
+        rel="stylesheet">
+    <!-- ✅ Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Bungee&family=Quicksand:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- css sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- 🧭 NAVBAR -->
+                <header class="nav-zone" id="navBubbleContainer">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="container">
+                            <a class="navbar-brand me-4" href="index.html">
+                                <img src="images/sanjalika logo.png" width="170" alt="Sanjalika Logo" />
+                            </a>
+
+                            <!-- Mobile Toggle -->
+                            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#mainNav">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="mainNav">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About US</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="rides&slides.html">Rides</a></li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="parkInfo" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Park Info
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="parkInfo">
+                                            <li><a class="dropdown-item" href="facilities.html">Facilities</a></li>
+                                            <li><a class="dropdown-item" href="foodzone.html">Food Zone</a></li>
+                                            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                            <li><a class="dropdown-item" href="waterparkblogg.html">BLOG</a></li>
+                                            <li><a class="dropdown-item" href="contactus.html#map">Location Map</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider" />
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item fw-bold text-primary" href="waterwold.pdf"
+                                                    download>
+                                                    <i class="bi bi-file-earmark-pdf"></i> Download PDF
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="sitemap.html">SiteMap</a></li>
+                                </ul>
+
+                                <div class="d-flex align-items-center gap-3 flex-wrap justify-content-center">
+                                    <span class="text-white small fw-bold">
+                                        <i class="bi bi-telephone"></i> +92 213 256
+                                    </span>
+                                    <a href="booknow.html" class="btn btn-book text-decoration-none ">BOOK NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="status-header">
+                    <div class="status-pill">
+                        <i class="bi bi-clock-fill text-warning me-2"></i>
+                        PARK STATUS: <span id="statusTxt">Checking...</span> | 10AM - 8PM
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ////////////////////// caruosel -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="bubble-wrap"></div>
+
+                <div id="mermaidCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                    data-bs-interval="2000">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="images/img4.jpg" alt="Underwater Magic">
+                            <div class="carousel-caption">
+                                <p class="brand-line">“Your Ultimate Splash Escape”</p>
+                                <h1 class="py-1"> Welcome to Sanjalika<span style="color: white;"><br> Water Park</span>
+                                </h1>
+                                <p class="lead">Pakistan’s Most Refreshing Water Park Experience!</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/img3 (2).jpg" alt="Ocean Waves">
+                            <div class="carousel-caption">
+                                <p class="brand-line">Welcome to Sanjalika Water Park</p>
+                                <h1 class="py-1">Cool Down & <span style="color: var(--mermaid-pink);">Relax</span></h1>
+                                <p class="lead">Endless Family Fun <br>Make every splash a lasting memory.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/img1.png" alt="Deep Sea Adventure">
+                            <div class="carousel-caption">
+                                <p class="brand-line">Welcome to Sanjalika Water Park</p>
+                                <h1 class="py-1">Ride the<span style="color: var(--mermaid-purple);">Thrill!</span></h1>
+                                <p class="lead">“Where Magic Meets the Waves!”<br>Heart-pounding slides and
+                                    world-class attractions await.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ///////// attraction section -->
+        <section id="hover-cards" class="pt-5 mt-5 scroll-card">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h1 class="attraction" class="fw-bold">Attractions</h1>
+                    <p class="text-muted">
+                    <h2>Dive into thrill, mystery and unforgettable adventures.</h2>
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Card 1 -->
+
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <article class="hover-card">
+                            <img src="images/family lagoon.png" alt="Family Lagoon" class="img-fluid card-img">
+                            <div class="hover-info">
+                                <h5 class="mb-2">Family Lagoon</h5>
+                                <p class="small mb-0">A calm, safe, and playful lagoon surrounded by sunshine and gentle
+                                    ripples.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Card 2 -->
+
+                    <div class="col-12 col-sm-6 col-lg-4 .fade-section'">
+                        <article class="hover-card">
+                            <img src="images/waterslide-398249_1920.jpg" alt="Mystic Slide" class="img-fluid card-img">
+                            <div class="hover-info">
+                                <h5 class="mb-2">Mystic Water Slide</h5>
+                                <p class="small mb-0">Glide through shimmering cave tunnels into a bright turquoise pool
+                                    —
+                                    pure thrill!</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <article class="hover-card">
+                            <img src="images/vave.png" alt="Cave Falls" class="img-fluid card-img">
+                            <div class="hover-info">
+                                <h5 class="mb-2">Cave Falls</h5>
+                                <p class="small mb-0">A natural-style waterfall inside the cave — an enchanting sight to
+                                    capture.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== FUN SECTION ===== -->
+        <section id="fun" class="fun fade-section ">
+            <div class="container">
+                <h2 class="mb-5">Our Kid-Favorite Rides & Zones!</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="fun-card h-100 ">
+                            <img src="images/rainbow racer!.png" class="img-fluid rounded-pill" alt="Rainbow Racer">
+                            <h3 class="py-2">Rainbow Racer 🛝</h3>
+                            <p>Slide through dazzling colors and splash into sparkling blue water — the ultimate fun
+                                race
+                                for friends!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="fun-card h-100">
+                            <img src="images/whale bay.png" class="img-fluid rounded-pill" alt="Whale Bay">
+                            <h3 class="py-2">Whale Bay 🐳</h3>
+                            <p>Meet our friendly whale fountains spraying cool mist as you swim and play under the sunny
+                                sky!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="fun-card h-100">
+                            <img src="images/kingdom splash.png" class="img-fluid rounded-pill" alt="Rainbow Racer">
+                            <h3 class="py-2">Mini Splash Kingdom 🌈</h3>
+                            <p>A fantasy castle where water buckets tip, slides twist, and giggles never stop — perfect
+                                for
+                                kids under 12!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //////facilities section////////////// --><!-- 💦 Sanjalika Water Park - Scroll Animated Facilities Section -->
+        <section id="home-facilities" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Left Side: Animated Text (slides from left) -->
+                    <div class="col-md-5 text-center text-md-start mb-4 mb-md-0 scroll-slide-left">
+                        <h2 class="fw-bold section-title mb-3">Our Facilities 🏖️</h2>
+                        <p class="lead mb-3" style="font-family: 'Inter', sans-serif;">
+                            Welcome to <strong>Sanjalika Water Park</strong> — where excitement meets relaxation!
+                            From top-notch safety and delicious food zones to spacious parking and secure lockers,
+                            we make sure your family’s day is full of fun and comfort.
+                        </p>
+                        <p class="lead" style="font-family: 'Inter', sans-serif;">
+                            Every facility at Sanjalika is designed to give you peace of mind while you dive into
+                            adventure.
+                            Enjoy, splash, relax, and let us handle the rest!
+                        </p>
+                        <a href="facilities.html" class="btn btn-read mt-3">Explore More</a>
+                    </div>
+
+                    <!-- Right Side: Facilities Grid -->
+                    <div class="col-md-7">
+                        <div class="row g-4">
+
+                            <!-- Facility 1 -->
+                            <div class="col-6 scroll-card" style="--delay:0s;">
+                                <div class="facility-mini p-4 text-center">
+                                    <i class="bi bi-car-front-fill icon mb-2"></i>
+                                    <h5 class="facility-title">Spacious Parking</h5>
+                                    <p class="facility-text">Ample parking space with 24/7 security so you can enjoy
+                                        your day stress-free.</p>
+                                </div>
+                            </div>
+
+                            <!-- Facility 2 -->
+                            <div class="col-6 scroll-card" style="--delay:0.2s;">
+                                <div class="facility-mini p-4 text-center">
+                                    <i class="bi bi-cup-hot-fill icon mb-2"></i>
+                                    <h5 class="facility-title">Food Zone</h5>
+                                    <p class="facility-text">A variety of delicious meals, snacks, and drinks — all
+                                        freshly made for you.</p>
+                                </div>
+                            </div>
+
+                            <!-- Facility 3 -->
+                            <div class="col-6 scroll-card" style="--delay:0.4s;">
+                                <div class="facility-mini p-4 text-center">
+                                    <i class="bi bi-shield-lock-fill icon mb-2"></i>
+                                    <h5 class="facility-title">Secure Lockers</h5>
+                                    <p class="facility-text">Store your valuables in digital lockers with modern safety
+                                        measures.</p>
+                                </div>
+                            </div>
+
+                            <!-- Facility 4 -->
+                            <div class="col-6 scroll-card" style="--delay:0.6s;">
+                                <div class="facility-mini p-4 text-center">
+                                    <i class="bi bi-life-preserver icon mb-2"></i>
+                                    <h5 class="facility-title">Safety & Lifeguards</h5>
+                                    <p class="facility-text">Certified lifeguards and first-aid experts on duty to
+                                        ensure your safety all day long.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- /////////////////////// about us -->
+        <!-- 💦 Sanjalika Water Park - About Us Section -->
+        <section id="about-us" class="py-5 my-5 ">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- VIDEO -->
+                    <div class="col-md-6 text-center scroll-card" style="--delay:0s;">
+                        <video autoplay muted loop playsinline style="width: 100%; height: auto; border-radius: 12px;">
+
+                            <source src="videos/sanjalika water world.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <!-- Right Side: Animated Text -->
+                    <div class="col-md-6 scroll-slide-right">
+                        <h2 class="fw-bold section-title mb-3">About Us 💧</h2>
+                        <p class="lead mb-3" style="font-family: 'Inter', sans-serif;">
+                            Welcome to <strong>Sanjalika Water Park</strong> — Pakistan’s most exciting water
+                            destination!
+                            We’re not just a park, we’re an experience filled with thrilling slides, family lagoons,
+                            and relaxing zones that make every visit unforgettable.
+                        </p>
+                        <p class="lead mb-3" style="font-family: 'Inter', sans-serif;">
+                            Our mission is to bring families and friends together through safe, modern, and
+                            joyful water adventures. With cutting-edge facilities, certified lifeguards,
+                            and eco-friendly operations — Sanjalika is where fun meets safety!
+                        </p>
+                        <p class="lead" style="font-family: 'Inter', sans-serif;">
+                            Whether you’re chasing adrenaline or a peaceful escape, we have something for everyone.
+                            Dive into happiness, laughter, and unforgettable memories at <strong>Sanjalika Water
+                                Park</strong>!
+                        </p>
+                        <a href="aboutus.html" class="btn btn-read mt-3">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 💦 Sanjalika Water Park - Dual Row Moving "Wall of Love" -->
+        <section id="wall-of-love" class="py-5 scroll-card">
+            <div class="container text-center ">
+                <h2 class="fw-bold section-title mb-4">Our Wall of Love 💖</h2>
+                <p class="lead mb-5" style="font-family: 'Inter', sans-serif;">
+                    A sea of smiles — every wave carries your love for Sanjalika Water Park!
+                </p>
+
+                <!-- Top Row -->
+                <div class="wall-container top-row mb-4">
+                    <div class="wall-track">
+                        <div class="love-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">“The Family Lagoon was perfect for kids and adults alike!”</p>
+                            <h6 class="reviewer-name">— Ayesha</h6>
+                        </div>
+                        <div class="love-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">“Mystic Water Cave felt like a dream — so magical!”</p>
+                            <h6 class="reviewer-name">— Hamza</h6>
+                        </div>
+                        <div class="love-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">“The staff was super friendly and everything was clean.”</p>
+                            <h6 class="reviewer-name">— Sara</h6>
+                        </div>
+                        <div class="love-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">“The wave pool was incredible — felt like the ocean!”</p>
+                            <h6 class="reviewer-name">— Ahmed</h6>
+                        </div>
+                        <div class="love-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">“We had so much fun — definitely coming again!”</p>
+                            <h6 class="reviewer-name">— Hira</h6>
+                        </div>
+
+                        <!-- duplicate for seamless loop -->
+                        <div class="love-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">“The Family Lagoon was perfect for kids and adults alike!”</p>
+                            <h6 class="reviewer-name">— Ayesha</h6>
+                        </div>
+                        <div class="love-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">“Mystic Water Cave felt like a dream — so magical!”</p>
+                            <h6 class="reviewer-name">— Hamza</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Row -->
+                <div class="wall-container bottom-row">
+                    <div class="wall-track reverse">
+                        <div class="love-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">“The slides were thrilling and super safe for kids!”</p>
+                            <h6 class="reviewer-name">— Raza</h6>
+                        </div>
+                        <div class="love-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">“So colorful and fun — the perfect summer day!”</p>
+                            <h6 class="reviewer-name">— Mariam</h6>
+                        </div>
+                        <div class="love-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">“Loved every moment here — our go-to family park!”</p>
+                            <h6 class="reviewer-name">— Zain</h6>
+                        </div>
+                        <div class="love-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">“Such a magical place, my kids can’t stop talking about it!”</p>
+                            <h6 class="reviewer-name">— Farah</h6>
+                        </div>
+                        <div class="love-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">“Absolutely loved the water rides and wave pool.”</p>
+                            <h6 class="reviewer-name">— Bilal</h6>
+                        </div>
+
+                        <!-- duplicate for seamless loop -->
+                        <div class="love-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">“The slides were thrilling and super safe for kids!”</p>
+                            <h6 class="reviewer-name">— Raza</h6>
+                        </div>
+                        <div class="love-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">“So colorful and fun — the perfect summer day!”</p>
+                            <h6 class="reviewer-name">— Mariam</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== CTA SECTION ===== -->
+        <section class="cta fade-section ">
+            <div class="container">
+                <h2>Plan Your Family Fun Day Today!</h2>
+                <p class="mb-4">Safe rides, colorful vibes, and water adventures await at Sanjalika Water Park!</p>
+                <a href="booknow.html" class="btn btn-water text-decoration-none button1">
+                    Buy Tickets 💦
+                </a>
+
+
+            </div>
+        </section>
+        <hr>
+        <!-- /////////////////// parent container -->
+    </div>
+    <!--///////////////////////////////////////////// footer//////////////////////// -->
+    <!-- footer -->
+    <footer>
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+
+        <div class="container footer-content">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5>Sanjalika Water Park</h5>
+                    <p>Experience thrilling rides, serene pools, and family fun at Karachi’s premier water adventure
+                        park. Dive into excitement and let your worries float away!</p>
+                    <div class="social-icons mt-3">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.tiktok.com/en/" target="_blank"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rides&slides.html">Rides & Attractions</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="booknow.html">Pricing</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="sitemap.html">SiteMap</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt-fill"></i> Main Super Highway, Karachi</li>
+                        <li><i class="bi bi-telephone-fill"></i> +92 21 3456 7890</li>
+                        <li><i class="bi bi-envelope-fill"></i> info@sanjalikawaterpark.com</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Newsletter</h5>
+                    <form class="newsletter">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="bi bi-send"></i> Join the Splash!</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-center pt-4 mt-4 border-top border-light rights">
+                <small>© 2026 Sanjalika Water Park | All Rights Reserved</small>
+            </div>
+        </div>
+    </footer>
+    <!-- 🌞 Welcome Popup -->
+
+    <div id="sanjalikaPopup" class="sanj-popup-overlay">
+        <div class="sanj-popup-card">
+            <button class="sanj-close" onclick="closePopup()" aria-label="Close">×</button>
+
+            <div class="sanj-logo-box">
+                <img src="images/sanjalika logo.png" alt="Sanjalika Logo" class="sanj-logo">
+            </div>
+
+            <div class="sanj-content">
+                <h6 class="sanj-welcome"></h6>
+                <h2 class="sanj-title">Sanjalika Water Park</h2>
+                <p class="sanj-offer">💦 Get <span class="highlight">20% OFF</span> when you book online!</p>
+
+                <div class="sanj-timings">
+                    <div class="time-box">
+                        <small><span class="clock-icon">⏰</span> Opens At</small>
+                        <strong>10:00 AM</strong>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="time-box">
+                        <small><span class="clock-icon">⏰</span> Closes At</small>
+                        <strong>08:00 PM</strong>
+                    </div>
+                </div>
+
+                <button class="sanj-btn" onclick="closePopup()">Claim Discount</button>
+            </div>
+        </div>
+    </div>
+    <!-- /////////////////////////////script///////////////////////////////////////////// -->
+
+    <script>
+        // Bubble Animation
+        function createBubble() {
+            const container = document.getElementById("navBubbleContainer");
+            if (!container) return;
+            const bubble = document.createElement("div");
+            bubble.className = "bubble-element";
+
+            const size = Math.random() * 30 + 10 + "px";
+            bubble.style.width = size;
+            bubble.style.height = size;
+            bubble.style.left = Math.random() * 100 + "%";
+            bubble.style.animationDuration = Math.random() * 2 + 3 + "s";
+
+            container.appendChild(bubble);
+            setTimeout(() => bubble.remove(), 5000);
+        }
+        setInterval(createBubble, 400);
+    </script>
+    <!-- ////// carousel/////////////////////////////////////// -->
+    <script>
+        // --- YOUR DYNAMIC STATUS LOGIC ---
+        function updateStatus() {
+            const h = new Date().getHours();
+            const status = document.getElementById('statusTxt');
+            if (h >= 10 && h < 20) {
+                status.innerHTML = '<span class="text-success">OPEN NOW</span>';
+            } else {
+                status.innerHTML = '<span class="text-danger">CLOSED NOW</span>';
+            }
+        }
+        updateStatus();
+        setInterval(updateStatus, 60000);
+
+        // --- MERMAID BUBBLE GENERATOR ---
+        function createBubble() {
+            const wrap = document.getElementById('bubble-wrap');
+            const bubble = document.createElement('div');
+            bubble.className = 'bubble';
+
+            const size = Math.random() * 25 + 10 + 'px';
+            bubble.style.width = size;
+            bubble.style.height = size;
+            bubble.style.left = Math.random() * 100 + 'vw';
+            bubble.style.animationDuration = Math.random() * 4 + 4 + 's';
+
+            wrap.appendChild(bubble);
+            setTimeout(() => { bubble.remove(); }, 8000);
+        }
+        setInterval(createBubble, 500); // Create a bubble every half second
+    </script>
+    <!-- fun section -->
+    <script>
+        const fadeSections = document.querySelectorAll('.fade-section');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.3 });
+        fadeSections.forEach(section => observer.observe(section));
+
+        $(document).ready(function () {
+            $(".animate-text").animate({
+                right: "0px" // Move to original position
+            }, 8000); // Duration in ms (1 second)
+        });
+
+    </script>
+    <!-- ///// attraction -->
+    <script>
+        /* Enable tap-to-reveal on touch devices */
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.hover-card');
+            cards.forEach(card => {
+                card.addEventListener('click', e => {
+                    const active = card.classList.contains('active');
+                    cards.forEach(c => c.classList.remove('active'));
+                    if (!active) card.classList.add('active');
+                    e.stopPropagation();
+                });
+            });
+            document.addEventListener('click', () => cards.forEach(c => c.classList.remove('active')));
+        });
+    </script>
+    <!-- ////// review section -->
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.hover-card');
+            cards.forEach(card => {
+                card.addEventListener('click', e => {
+                    const active = card.classList.contains('active');
+                    cards.forEach(c => c.classList.remove('active'));
+                    if (!active) card.classList.add('active');
+                    e.stopPropagation();
+                });
+            });
+            document.addEventListener('click', () => cards.forEach(c => c.classList.remove('active')));
+        });
+    </script>
+    <!-- faciities section/////////// -->
+    <!-- 🌊 Scroll Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const scrollElements = document.querySelectorAll(".scroll-slide-left, .scroll-card");
+
+            const elementInView = (el, offset = 100) => {
+                const elementTop = el.getBoundingClientRect().top;
+                return (
+                    elementTop <= ((window.innerHeight || document.documentElement.clientHeight) - offset)
+                );
+            };
+
+            const displayScrollElement = (element) => {
+                element.classList.add("visible");
+            };
+
+            const hideScrollElement = (element) => {
+                element.classList.remove("visible");
+            };
+
+            const handleScrollAnimation = () => {
+                scrollElements.forEach((el) => {
+                    if (elementInView(el, 120)) {
+                        displayScrollElement(el);
+                    } else {
+                        hideScrollElement(el);
+                    }
+                });
+            };
+
+            window.addEventListener("scroll", () => {
+                handleScrollAnimation();
+            });
+
+            // Trigger once on load
+            handleScrollAnimation();
+        });
+    </script>
+    <!-- /////////////////////////// about us -->
+    <!-- 🌊 Scroll Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const scrollElements = document.querySelectorAll(".scroll-slide-right, .scroll-card");
+
+            const elementInView = (el, offset = 100) => {
+                const elementTop = el.getBoundingClientRect().top;
+                return (
+                    elementTop <= ((window.innerHeight || document.documentElement.clientHeight) - offset)
+                );
+            };
+
+            const displayScrollElement = (element) => {
+                element.classList.add("visible");
+            };
+
+            const hideScrollElement = (element) => {
+                element.classList.remove("visible");
+            };
+
+            const handleScrollAnimation = () => {
+                scrollElements.forEach((el) => {
+                    if (elementInView(el, 120)) {
+                        displayScrollElement(el);
+                    } else {
+                        hideScrollElement(el);
+                    }
+                });
+            };
+
+            window.addEventListener("scroll", () => {
+                handleScrollAnimation();
+            });
+
+            handleScrollAnimation();
+        });
+    </script>
+    <!-- popup -->
+    <script>
+        function closePopup() {
+            const popup = document.getElementById('sanjalikaPopup');
+            popup.style.opacity = '0';
+            popup.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => popup.style.display = 'none', 500);
+        }
+        window.addEventListener('load', () => {
+            // Auto close after 7s
+            setTimeout(closePopup, 7000);
+
+            // Typing greeting animation
+            const welcome = document.querySelector('.sanj-welcome');
+            const title = document.querySelector('.sanj-title');
+            const button = document.querySelector('.sanj-btn');
+            const text = 'Welcome To';
+            let i = 0;
+
+            function type() {
+                if (i < text.length) {
+                    welcome.textContent += text.charAt(i);
+                    i++;
+                    welcome.style.opacity = '1';
+                    setTimeout(type, 100);
+                } else {
+                    // Fade in title
+                    title.style.transition = 'opacity 0.8s, transform 0.8s';
+                    title.style.opacity = '1';
+                    title.style.transform = 'translateY(0)';
+
+                    // Slide in button after title
+                    setTimeout(() => {
+                        button.style.transition = 'opacity 0.8s, transform 0.8s';
+                        button.style.opacity = '1';
+                        button.style.transform = 'translateY(0)';
+                    }, 400);
+                }
+            }
+            type();
+        });
+    </script>
+
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- ✅ Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
