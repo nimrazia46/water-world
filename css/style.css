@@ -219,36 +219,56 @@ body {
 /* --- YOUR STATUS PILL (Mermaid Styled) --- */
 .status-header {
     position: absolute;
-    top: 30px;
+    top: 80%; /* keeps it near top */
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
+    width: 80%;        /* smaller width */
+    max-width: 550px;  /* smaller max width */
 }
 
 .status-pill {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
     border: 2px solid rgba(45, 226, 226, 0.3);
-    padding: 30px 40px;
-    border-radius: 50px;
+    padding: 1.2rem 2rem; /* smaller padding */
+    border-radius: 40px;   /* slightly smaller pill */
     color: #fff;
-    box-shadow: 0 0 20px rgba(45, 226, 226, 0.2);
+    box-shadow: 0 0 12px rgba(45, 226, 226, 0.2);
     font-weight: 600;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: clamp(0.85rem, 2vw, 1.2rem); /* smaller font */
     animation: floatPill 4s ease-in-out infinite;
-    margin-top: 600px;
 }
 
+/* Hover effect */
+.status-pill:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 18px rgba(45, 226, 226, 0.3);
+}
+
+/* Float animation */
 @keyframes floatPill {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); } /* smaller float */
+}
 
-    0%,
-    100% {
-        transform: translateY(0);
+/* ======== MEDIA QUERIES ======== */
+@media (max-width: 768px) {
+    .status-pill {
+        padding: 1rem 1.8rem;
+        font-size: clamp(0.8rem, 2.5vw, 1rem);
     }
+}
 
-    50% {
-        transform: translateY(-10px);
+@media (max-width: 480px) {
+    .status-header {
+        top: 3%;
+        width: 90%;
+    }
+    .status-pill {
+        padding: 0.8rem 1.5rem;
+        font-size: clamp(0.7rem, 3vw, 0.95rem);
     }
 }
 
